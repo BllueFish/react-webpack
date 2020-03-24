@@ -1,0 +1,97 @@
+@import "../base/variables";
+
+:global {
+    .basic-form {
+        .ant-row {
+            & {
+                margin-bottom: 10px;
+                overflow     : hidden;
+            }
+
+            &.height-auto {
+                height: auto;
+            }
+
+            .basic-info-title {
+                text-align   : right;
+                height       : 32px;
+                line-height  : 32px;
+                white-space  : nowrap;
+                overflow     : hidden;
+                text-overflow: ellipsis;
+            }
+
+            .lable-require::before {
+                content     : "*";
+                color       : red;
+                position    : relative;
+                top         : 2px;
+                margin-right: 3px;
+            }
+
+            .ant-radio-group {
+                line-height: 32px;
+            }
+
+            .ant-select,
+            .ant-input-number {
+                width: 100%;
+            }
+
+            .basic-info-oper {
+                & {
+                    font-size     : 20px;
+                    vertical-align: top;
+                    color         : #999;
+                    margin-left   : 10px;
+                    display       : inline-block;
+                    line-height   : 30px !important;
+                }
+
+                i {
+                    margin-right: 10px;
+                    cursor      : pointer;
+                }
+
+                i:last-child {
+                    margin-right: 0;
+                }
+
+                i.add:hover,
+                i.edit:hover {
+                    color: @blue;
+                }
+
+                i.delete:hover {
+                    color: #f00;
+                }
+
+                i.show-more {
+                    transform        : rotate(-90deg);
+                    -moz-transform   : rotate(-90deg);
+                    -webkit-transform: rotate(-90deg);
+                }
+
+                i.show-more.hide {
+                    transform        : rotate(90deg);
+                    -moz-transform   : rotate(90deg);
+                    -webkit-transform: rotate(90deg);
+                }
+            }
+
+            .pop-tip {
+                max-width: 300px;
+            }
+
+            .pop-tip-icon {
+                font-size  : 20px;
+                line-height: 32px;
+                color      : #999;
+            }
+
+            .pop-tip-icon:hover {
+                color: #3484F4;
+            }
+        }
+    }
+}

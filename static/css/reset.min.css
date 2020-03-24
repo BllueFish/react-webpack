@@ -1,0 +1,34 @@
+body,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+form,
+dl,
+dt,
+dd,
+figure {
+    margin     : 0px;
+    padding    : 0px;
+    font-size  : 14px;
+    font-weight: normal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei UI", "Microsoft YaHei", SimHei, "宋体", simsun, sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    border-style: none;
+}
+
+a {
+    text-decoration: none;
+}
